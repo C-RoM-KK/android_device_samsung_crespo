@@ -14,11 +14,7 @@ $(call inherit-product, vendor/crom/config/common_phone.mk)
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
-#set camera info
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.camera.res=5MP
+$(call inherit-product, vendor/crom/config/nfc_enhanced.mk)
 
 PRODUCT_NAME := crom_crespo
 PRODUCT_DEVICE := crespo
